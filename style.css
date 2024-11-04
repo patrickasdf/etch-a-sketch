@@ -1,19 +1,38 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .container {
     display: flex;
-    min-width: 800px;
-    max-width: 800px;;
-    min-height: auto;
-    background-color: rgb(235, 54, 84);
-    border: 1px solid red;
+    min-width: 650px;
+    max-width: 650px;
+    max-height: 650px;
+    min-height: 650px;
+    border: 1px solid rgba(112, 128, 144, 0.4);
+}
+
+button {
+    margin: 8px;
+    font-size: 14px;
 }
 
 div {
-    color: red;
-    background-color: wheat;
-    border: 1px dotted red;
+    background-color: rgba(0, 0, 0, 0);
+    display: flex;
+    flex: 1;
 }
 
 div.divWidth {
-    color: blue;
-    border: 1px dotted blue;
+    display: flex;
+    flex-direction: column;
+}
+
+div.hovered { 
+    background-color: rgba(0, 0, 0, 0.1)
+}
+
+div.clicked {
+    background-color: rgba(0, 0, 0, 0.5);;
 }
